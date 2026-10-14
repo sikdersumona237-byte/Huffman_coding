@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huffman Coding and Decoding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Huffman Coding</h1>
+        <p>Encode and decode text using Huffman coding.</p>
+
+        <label for="inputText">Enter your text:</label>
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+        <div class="buttons">
+            <button onclick="encodeText()">Encode</button>
+            <button onclick="decodeText()">Decode</button>
+        </div>
+
+        <h3>Character Frequencies and Huffman Codes</h3>
+        <div id="codes"></div>
+
+        <h3>Encoded Binary Text</h3>
+        <textarea id="encodedText" readonly></textarea>
+
+        <h3>Decoded Text</h3>
+        <textarea id="decodedText" readonly></textarea>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
